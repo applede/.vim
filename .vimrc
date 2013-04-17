@@ -4,6 +4,8 @@ set shiftwidth=2
 set expandtab
 set dir=~/tmp
 set undodir=~/tmp
+set cursorline
+set fillchars+=vert:\ 
 "set autowriteall
 "map <F2> :cd /Volumes/Raid3/x2/trunk/Code/Game/osx<bar>:NERDTree<cr>
 "
