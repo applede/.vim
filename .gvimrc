@@ -1,10 +1,11 @@
+set cursorline
 "set nocompatible
-"colorscheme Monokai
+colorscheme Monokai
 "colorscheme Molokai
-colorscheme smyck
-hi StatusLine           cterm=none ctermbg=8        ctermfg=15      gui=bold        guibg=#FBFBFB   guifg=#5D5D5D
-hi CursorLine           cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#424242
-hi VertSplit            cterm=none ctermbg=15       ctermfg=8       gui=bold        guibg=#5D5D5D   guifg=#FBFBFB
+"colorscheme smyck
+"hi StatusLine           cterm=none ctermbg=8        ctermfg=15      gui=bold        guibg=#FBFBFB   guifg=#5D5D5D
+"hi CursorLine           cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#424242
+"hi VertSplit            cterm=none ctermbg=15       ctermfg=8       gui=bold        guibg=#5D5D5D   guifg=#FBFBFB
 "hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#64645e guibg=#64645e gui=NONE
 set guifont=Consolas:h15
 "set guioptions-=T

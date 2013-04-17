@@ -1,14 +1,22 @@
 execute pathogen#infect()
-map <F2> :NERDTreeToggle<cr>
+map <f2> :NERDTreeToggle<cr>
+map <f3> \be
+map <f4> yy:<c-r>"<c-h><cr>
+map <f5> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+map <c-tab> \be
+map <d-s> :wa<cr>
 set shiftwidth=2
 set expandtab
 set dir=~/tmp
 set undodir=~/tmp
-set cursorline
 set fillchars+=vert:\ 
+set ignorecase
+set statusline=%t\ %r%m\ %y%=(%{&fenc}\ %{&ff})\ %c,%l/%L\ %P
+set hlsearch
 "set autowriteall
 "map <F2> :cd /Volumes/Raid3/x2/trunk/Code/Game/osx<bar>:NERDTree<cr>
 "
+
 function! Smart_TabComplete()
   let line = getline('.')                         " current line
 
