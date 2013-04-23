@@ -3,6 +3,8 @@ map <f2> :NERDTreeToggle<cr>
 map <f3> \be
 map <f4> yy:<c-r>"<c-h><cr>
 map <f5> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+map <f7> :cp<cr>
+map <f8> :cn<cr>
 map <c-tab> \be
 map <d-s> :wa<cr>
 set shiftwidth=2
