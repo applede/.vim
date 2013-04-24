@@ -3,7 +3,7 @@ map <f2> :NERDTreeToggle<cr>
 map <f3> \be
 map <f4> yy:<c-r>"<c-h><cr>
 "map <f5> :execute "vimgrep /" . expand("<cword>") . "/j **"
-map <f5> :vimgrep /<cword>/j **
+map <f5> :vimgrep /<c-r><c-w>/j %:p:h/* <bar>cw<c-left><c-left><left><left><left>
 map <f7> :cp<cr>
 map <f8> :cn<cr>
 map <f9> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
